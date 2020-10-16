@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=D:\Xilinx\device\Pipeline\top.ncd
-OUTFILE=D:\Xilinx\device\Pipeline\top.bit
-FAMILY=Kintex7
-PART=xc7k160t-2lfbg676
-WORKINGDIR=D:\Xilinx\device\Pipeline
-LICENSE=WebPack
-USER_INFO=__0_0_0
