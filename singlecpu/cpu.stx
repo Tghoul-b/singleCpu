@@ -1,0 +1,80 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Xilinx/device/singlecpu/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to D:/Xilinx/device/singlecpu/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: cpu.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Xilinx\device\singlecpu\cpu.v" into library work
+Parsing verilog file "alu.v" included at line 1.
+Parsing verilog file "ctrl_encode_def.v" included at line 1.
+Parsing module <alu>.
+Parsing verilog file "ctrl_unit.v" included at line 2.
+Parsing verilog file "ctrl_encode_def.v" included at line 1.
+Parsing module <ctrl_unit>.
+ERROR:HDLCompiler:870 - "ctrl_unit.v" Line 25: Macro <reg_in_in> is not defined.
+ERROR:HDLCompiler:806 - "ctrl_unit.v" Line 25: Syntax error near ";".
+ERROR:HDLCompiler:806 - "ctrl_unit.v" Line 37: Syntax error near ";".
+ERROR:HDLCompiler:870 - "ctrl_unit.v" Line 96: Macro <shamt> is not defined.
+ERROR:HDLCompiler:806 - "ctrl_unit.v" Line 96: Syntax error near ";".
+ERROR:HDLCompiler:806 - "ctrl_unit.v" Line 102: Syntax error near ";".
+ERROR:HDLCompiler:806 - "ctrl_unit.v" Line 114: Syntax error near ";".
+ERROR:HDLCompiler:870 - "ctrl_unit.v" Line 432: Macro <reg_inIMM> is not defined.
+ERROR:HDLCompiler:806 - "ctrl_unit.v" Line 432: Syntax error near "begin".
+Parsing verilog file "EXT.v" included at line 3.
+Parsing verilog file "ctrl_encode_def.v" included at line 1.
+WARNING:HDLCompiler:1563 - "EXT.v" Line 3: Empty item in case item list violates IEEE 1364 syntax
+WARNING:HDLCompiler:1563 - "EXT.v" Line 4: Empty item in case item list violates IEEE 1364 syntax
+ERROR:HDLCompiler:346 - "EXT.v" Line 3: Default case should appear only once
+ERROR:HDLCompiler:346 - "EXT.v" Line 4: Default case should appear only once
+ERROR:HDLCompiler:69 - "EXT.v" Line 9: <Imm32> is not declared.
+ERROR:HDLCompiler:346 - "EXT.v" Line 5: Default case should appear only once
+ERROR:HDLCompiler:69 - "EXT.v" Line 10: <Imm32> is not declared.
+ERROR:HDLCompiler:346 - "EXT.v" Line 10: Default case should appear only once
+ERROR:HDLCompiler:69 - "EXT.v" Line 11: <Imm32> is not declared.
+ERROR:HDLCompiler:346 - "EXT.v" Line 11: Default case should appear only once
+ERROR:HDLCompiler:69 - "EXT.v" Line 12: <Imm32> is not declared.
+ERROR:HDLCompiler:346 - "EXT.v" Line 12: Default case should appear only once
+Sorry, too many errors..
+--> 
+
+Total memory usage is 4504064 kilobytes
+
+Number of errors   :   19 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
