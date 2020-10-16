@@ -5,7 +5,7 @@
 // 
 // Create Date:    21:03:38 04/29/2014 
 // Design Name: 
-// Module Name:    Anti_jitter 
+// Module Name:    Anti_jitter   
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
