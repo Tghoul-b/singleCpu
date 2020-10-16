@@ -1,0 +1,161 @@
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+xst -intstyle ise -ifn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.xst" -ofn "G:/Pipeline_CPU/Lab/Top_Simple_CPU_App/top_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Org-Sword.ucf -p xc7k160t-fbg676-2L top_cpu.ngc top_cpu.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_cpu_map.ncd top_cpu.ngd top_cpu.pcf 
+par -w -intstyle ise -ol high -mt off top_cpu_map.ncd top_cpu.ncd top_cpu.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_cpu.twx top_cpu.ncd -o top_cpu.twr top_cpu.pcf -ucf Org-Sword.ucf 
+bitgen -intstyle ise -f top_cpu.ut top_cpu.ncd 
